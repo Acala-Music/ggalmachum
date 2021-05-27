@@ -12,30 +12,51 @@
 }
 
 .logo {
-	background : url('images/hdr_logo.png') no-repeat;
-	margin-top : 0.6rem;
+	background : url('images/hdr_logo_mobile.png') no-repeat;
+	margin-top : 1.2rem;
 	position : absolute;
 	display : block;
-    width : 12rem;
-    height : 3.6rem;
+    width : 5rem;
+    height : 2.4rem;
+	left : 1.2rem;
 }
 
 .logo a {
 	display: block;
-    width : 12rem;
-    height : 3.6rem;
+    width : 5rem;
+    height : 2.4rem;
     text-indent: -999999rem;
+}
+
+@media screen and (min-width: 769px) {
+	.logo {
+		background : url('images/hdr_logo.png') no-repeat;
+		margin-top : 1rem;
+		position : absolute;
+		display : block;
+		width : 12rem;
+		height : 3.6rem;
+	}
+	
+	.logo:hover{background : url('images/header_logo.png') no-repeat}
+	
+	.logo a {
+		display: block;
+		width : 12rem;
+		height : 3.6rem;
+		text-indent: -999999rem;
+	}
 }
 
 .search-bar {
 	position : absolute;
 	margin-top : 1.2rem;
-	left : 20rem;
+	left : 7.8rem;
 }
 
 .search {
 	display : block;
-	width : 36rem;
+	width : 15rem;
     height : 2.4rem;
 	border-radius : 0.6rem;
 	padding-bottom : 1rem;
@@ -44,6 +65,28 @@
 	background : url('images/search_icon.png') no-repeat 0.6rem 40%;
 	background-size : 1.5rem;
 	background-color : #f7f7f7;
+}
+
+@media screen and (min-width: 769px) {
+	.search-bar {
+		position : absolute;
+		margin-top : 1.2rem;
+		left : 20rem;
+	}
+	
+	.search {
+		display : block;
+		width : 36rem;
+		height :2.4rem;
+		border-radius : 0.6rem;
+		padding-bottom : 1rem;
+		padding-top : 0.8rem;
+		padding-left : 2.4rem;
+		background : url('images/search_icon.png') no-repeat 0.6rem 40%;
+		background-size : 1.5rem;
+		background-color : #f7f7f7;
+	}
+	}
 }
 
 .narrow-container {
