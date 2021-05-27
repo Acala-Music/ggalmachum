@@ -5,10 +5,19 @@
 }
 
 #hdr1 {
-	width : 72rem;
+	width : 24rem;
 	height : 5rem;
 	margin : 0 auto;
 	position : relative;
+}
+
+@media screen and (min-width: 769px) {
+	#hdr1 {
+		width : 72rem;
+		height : 5rem;
+		margin : 0 auto;
+		position : relative;
+	}
 }
 
 .logo {
@@ -18,7 +27,7 @@
 	display : block;
     width : 5rem;
     height : 2.4rem;
-	left : 1.2rem;
+	left : 0.6rem;
 }
 
 .logo a {
@@ -51,19 +60,19 @@
 .search-bar {
 	position : absolute;
 	margin-top : 1.2rem;
-	left : 7.8rem;
+	left : 7.2rem;
 }
 
 .search {
 	display : block;
-	width : 15rem;
+	width : 13.8rem;
     height : 2.4rem;
 	border-radius : 0.6rem;
 	padding-bottom : 1rem;
     padding-top : 0.8rem;
-    padding-left : 2.4rem;
+    padding-left : 2rem;
 	background : url('images/search_icon.png') no-repeat 0.6rem 40%;
-	background-size : 1.5rem;
+	background-size : 1.2rem;
 	background-color : #f7f7f7;
 }
 
@@ -85,7 +94,7 @@
 		background : url('images/search_icon.png') no-repeat 0.6rem 40%;
 		background-size : 1.5rem;
 		background-color : #f7f7f7;
-	}
+	
 	}
 }
 
@@ -111,11 +120,11 @@
 .main_menu {
 	text-align: center;
     text-transform: uppercase;
-    height: 50px;
+    height: 42px;
 }
 
 .main_menu:first-child a {
-    padding-left: 15px;
+    padding-left: 10px;
     justify-content: start;
 }
 
@@ -123,10 +132,34 @@
     display: block;
     display: flex;
     justify-content: center;
-    padding: 10px 1em 0;
     color: #666;
     text-decoration: none;
     white-space: nowrap;
     font-size: 1rem;
     font-family: 'Noto Sans KR', sans-serif;
+}
+
+@media screen and (min-width: 769px) {
+	.main_menu {
+	text-align: center;
+	text-transform: uppercase;
+	height: 50px;
+	}
+	
+	.main_menu:first-child a {
+	padding-left: 15px;
+	justify-content: start;	
+	}
+	
+	.main_menu a {
+		display: block;
+		display: flex;
+		justify-content: center;
+		padding: 10px 1em 0;
+		color: #666;
+		text-decoration: none;
+		white-space: nowrap;
+		font-size: 1rem;
+		font-family: 'Noto Sans KR', sans-serif;
+	}
 }
