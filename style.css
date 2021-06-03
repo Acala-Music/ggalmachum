@@ -98,15 +98,17 @@
 	}
 }
 
-.narrow-container {
+.title_container {
 	width : 95%;
+	height : 2.4rem;
 	margin : 0 auto;
 	margin-top : 1rem;
 }
 
 @media screen and (min-width: 769px) {
-	.narrow-container {
+	.title_container {
 	width : 65%;
+	height : 3rem;
 	margin : 0 auto;
 	margin-top : 1rem;
 	}
@@ -134,6 +136,7 @@
 .main_menu:first-child a {
     padding-left: 10px;
     justify-content: start;
+	color : #1e1e1e;
 }
 
 .main_menu a {
@@ -157,7 +160,10 @@
 	.main_menu:first-child a {
 	padding-left: 15px;
 	justify-content: start;	
+	color : #1e1e1e;
 	}
+	
+	.main_menu:hover{border-bottom : 0.12rem solid rgb(120,120,120)}
 	
 	.main_menu a {
 		display: block;
@@ -172,10 +178,26 @@
 	}
 }
 
+.Top_Text {
+	font-family : 'Noto Sans KR', sans-serif;
+	font-size : 1rem;
+	position : absolute;
+}
+
+@media screen and (min-width: 769px) {
+	.Top_Text {
+	font-family : 'Noto Sans KR', sans-serif;
+	font-size : 1.5rem;
+	position : absolute;
+	}
+}
+
+dl, ol, ul {padding-left : 0!important}
+
 ul, li {list-style : none;}
 
 [name="slide"] {display : none;}
-.slidebox {max-width : 1000px; width:100%; margin:0 auto;}
+.slidebox {max-width : 1200px; width : 100%; margin : 0 auto; margin-bottom : 3rem;}
 .slidebox img {max-width : 100%;}
 .slidebox .slidelist {
 	white-space : nowrap;
@@ -203,19 +225,17 @@ ul, li {list-style : none;}
 
 label.left {
 	left : 20px;
-	background-color : #5F5F5F;
 	background-image : url('img/left-arrow.png');
 	background-position : center center;
-	background-size : 50%;
+	background-size : 20%;
 	background-repeat : no-repeat;
 }
 
 label.right {
 	right : 20px;
-	background-color : #5F5F5F;
 	background-image : url('img/right-arrow.png');
 	background-position : center center;
-	background-size : 50%;
+	background-size : 20%;
 	background-repeat : no-repeat;
 }
 
@@ -270,4 +290,24 @@ label.right {
 	75% {left:100%;}
 	98% {left:100%;}
 	100% {left:0%;}
+}
+
+@media screen and (min-width: 769px) {
+	label.left {
+	left : 20px;
+	background-color : #5F5F5F;
+	background-image : url('img/left-arrow.png');
+	background-position : center center;
+	background-size : 50%;
+	background-repeat : no-repeat;
+	}
+	
+	label.right {
+	right : 20px;
+	background-color : #5F5F5F;
+	background-image : url('img/right-arrow.png');
+	background-position : center center;
+	background-size : 50%;
+	background-repeat : no-repeat;
+	}
 }
