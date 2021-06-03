@@ -16,6 +16,14 @@
 			href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap"
 			rel="stylesheet"
 		/>
+		<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+		<script>
+        // SDK를 초기화 합니다. 사용할 앱의 JavaScript 키를 설정해 주세요.
+        Kakao.init('a9965ec1642ef0d9d512dcc38473f114');
+
+        // SDK 초기화 여부를 판단합니다.
+        console.log(Kakao.isInitialized());
+    </script>
 
 		<title>깔맞춤: 코디 매칭 및 쇼핑</title>
 	</head>
@@ -58,46 +66,46 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="title_container">
 			<h1 class="Top_Text">깔맞춤 : 코디 매칭 및 쇼핑</h1>
 		</div>
-		
-			<div class="slidebox">
-				<input type="radio" name="slide" id="slide01" checked>
-				<input type="radio" name="slide" id="slide02">
-				<input type="radio" name="slide" id="slide03">
-				<input type="radio" name="slide" id="slide04">
-				<ul class="slidelist">
-					<li class="slideitem">
-						<div>
-							<label for="slide04" class="left"></label>
-							<label for="slide02" class="right"></label>
-							<a><img src="./img/slide01.png"></a>
-						</div>
-					</li>
-					<li class="slideitem">
-						<div>
-							<label for="slide01" class="left"></label>
-							<label for="slide03" class="right"></label>
-							<a><img src="./img/slide02.png"></a>
-						</div>
-					</li>
-					<li class="slideitem">
-						<div>
-							<label for="slide02" class="left"></label>
-							<label for="slide04" class="right"></label>
-							<a><img src="./img/slide03.png"></a>
-						</div>
-					</li>
-					<li class="slideitem">
-						<div>
-							<label for="slide03" class="left"></label>
-							<label for="slide01" class="right"></label>
-							<a><img src="./img/slide04.png"></a>
-						</div>
-					</li>
-				</ul>
-			</div>
+
+		<div class="slidebox">
+			<input type="radio" name="slide" id="slide01" checked />
+			<input type="radio" name="slide" id="slide02" />
+			<input type="radio" name="slide" id="slide03" />
+			<input type="radio" name="slide" id="slide04" />
+			<ul class="slidelist">
+				<li class="slideitem">
+					<div>
+						<label for="slide04" class="left"></label>
+						<label for="slide02" class="right"></label>
+						<a><img src="./img/slide01.png" /></a>
+					</div>
+				</li>
+				<li class="slideitem">
+					<div>
+						<label for="slide01" class="left"></label>
+						<label for="slide03" class="right"></label>
+						<a><img src="./img/slide02.png" /></a>
+					</div>
+				</li>
+				<li class="slideitem">
+					<div>
+						<label for="slide02" class="left"></label>
+						<label for="slide04" class="right"></label>
+						<a><img src="./img/slide03.png" /></a>
+					</div>
+				</li>
+				<li class="slideitem">
+					<div>
+						<label for="slide03" class="left"></label>
+						<label for="slide01" class="right"></label>
+						<a><img src="./img/slide04.png" /></a>
+					</div>
+				</li>
+			</ul>
+		</div>
 	</body>
 </html>
